@@ -150,7 +150,7 @@ function numberToLetters(num){
     return result;
 }
 
-const number = prompt('Введите число от -999 до 999:');
+const number = '';
 const numberInWords = numberToWords(number);
 console.log(numberInWords);
 
