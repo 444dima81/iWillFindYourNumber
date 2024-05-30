@@ -106,9 +106,9 @@ document.getElementById('btnEqual').addEventListener('click', function () {
 // Запись в текст
 function numberToLetters(num){
     
-    const hundreds = ['сто', 'двести', 'триста', 'четыреста', 'пятьсот', 'шестьсот', 'семьсот', 'восемьсот', 'девятьсот'];
+    const hundreds = ['', 'сто', 'двести', 'триста', 'четыреста', 'пятьсот', 'шестьсот', 'семьсот', 'восемьсот', 'девятьсот'];
     const teens = ['десять', 'двадцать', 'тридцать', 'сорок', 'пятьдесят', 'шестьдесят', 'семьдесят', 'восемьдесят', 'девяноста'];
-    const ones = ['один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять'];
+    const ones = ['', 'один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять'];
     const tens = ['', '', 'двадцать', 'тридцать', 'сорок', 'пятьдесят', 'шестьдесят', 'семьдесят', 'восемьдесят', 'девяносто']
    
     if (num < -999 || num > 999) {
@@ -151,7 +151,7 @@ function numberToLetters(num){
 }
 
 const number = '';
-const numberInWords = numberToWords(number);
+const numberInWords = numberToLetters(number);
 console.log(numberInWords);
 
 // function numberToLetters(Number){
