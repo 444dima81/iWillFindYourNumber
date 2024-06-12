@@ -20,18 +20,18 @@ document.getElementById('btnRetry').addEventListener('click', function () {
         maxValue = parseInt(prompt('Максимальное знание числа для игры','999'));
         alert(`Загадайте любое целое число от ${minValue} до ${maxValue}, а я его угадаю`);
 
- // 
+// 
         minValue = (minValue < '-999') ? -999 : minValue;
         maxValue = (maxValue > '999') ? 999 : maxValue;
 
-        if (Number.isNaN(minValue)){
-            minValue = -999 === 'default';
+        if (isNaN(minValue)){
+            minValue = -999;
             console.log(minValue);
         } 
-        if (Number.isNaN(maxValue)){
-            maxValue = 999 === 'default';
+        if (isNaN(maxValue)){
+            maxValue = 999;
             console.log(maxValue);
-        } 
+        }
 
         answerNumber  = Math.floor((minValue + maxValue) / 2);
         answerField.innerText = `Вы загадали число ${answerNumber }?`
